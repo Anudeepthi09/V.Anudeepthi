@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+* {
+    box-sizing: border-box;
+}
+        
+ /* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+    padding: 20px;
+}
+        
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+        
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 992px) {
+.column {
+    width: 50%;
+        }
+}
+        
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+.column {
+    width: 100%;
+        }
+}
+</style>
+</head>
+<body>
+    <h2>Responsive Four Column Layout</h2>
+    <p><strong>Resize the browser window to see the responsive effect.</strong> On screens that are 992px wide or less, the columns will resize from four columns to two columns. On screens that are 600px wide or less, the columns will stack on top of each other instead of next to eachother.</p>
+        
+<div class="row">
+    <div class="column" style="background-color:lightpink;">
+        <h2>Column 1</h2>
+        <p>The @media rule, introduced in CSS2, made it possible to define different style rules for different media types.</p>
+    </div>
+          
+    <div class="column" style="background-color:khaki;">
+        <h2>Column 2</h2>
+        <p>Using media queries are a popular technique for delivering a tailored style sheet to desktops, laptops, tablets, and mobile phones.</p>
+    </div>
+          
+    <div class="column" style="background-color:lightskyblue;">
+        <h2>Column 3</h2>
+        <p>One way to use media queries is to have an alternate CSS section right inside your style sheet& we used to create a responsive navigation menu.</p>
+    </div>
+          
+    <div class="column" style="background-color:#ddd;">
+        <h2>Column 4</h2>
+        <p>For example,we can change background color for different devices,A common use of media queries to create a flexible layout.</p>
+    </div>
+</div>
+</body>
+</html>        
